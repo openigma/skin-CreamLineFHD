@@ -4400,7 +4400,7 @@ self["list"].instance.move(ePoint(10,textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2,orgpos.y()))
    </applet>
   </screen>
   <screen name="MovieContextMenu" position="0,0" size="1920,1080" title="Movielist menu" backgroundColor="transparent" flags="wfNoBorder">
@@ -7762,7 +7762,7 @@ self["menu"].downstream_elements.downstream_elements.instance.resize(eSize(*list
 # center window
 newwidth = wsize[0]
 newheight = wsize[1]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (orgheight - newheight)/2))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y()  + (orgheight - newheight)//2))
 		</applet>
   </screen>
   <screen name="HddInfo" position="0,0" size="1920,1080" title="Hard Drive Info" backgroundColor="transparent" flags="wfNoBorder">
